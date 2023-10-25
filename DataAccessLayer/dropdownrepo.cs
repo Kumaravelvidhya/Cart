@@ -28,7 +28,7 @@ namespace DataAccessLayer
 
                 var connection = new SqlConnection(connectionString);
                 connection.Open();
-                constrain = connection.Query<Dropdownmodels>($" exec dropNo ").ToList();
+                constrain = connection.Query<Dropdownmodels>($"exec dropNo").ToList();
                 connection.Close();
 
                 return constrain;
